@@ -1,0 +1,564 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* :root {
+    --primary 
+    --secondary: 
+} */
+
+body {
+    font-family: 'Lora', serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.items {
+    align-items: center;
+}
+header {
+    height: 380px;
+}
+
+header {
+    background: black;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    justify-content: space-around;
+    /* height: 500px; */
+}
+
+.first-image {
+    height: 60px;
+    float: left;
+    margin-right: 16px;
+    margin-left: 6px;
+}
+.first-image p {
+    color: white;
+    margin-left: 6px;
+}
+.first-image p span {
+    color: red;
+}
+.nav-container a{
+    text-decoration: none;
+    color: white;
+    margin-right: 6px;
+    padding-top: 4rem;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.nav-container a:hover {
+    color: cadetblue;
+}
+
+.nav-container button {
+    width: 80px;
+    padding: 9px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all .3s ease;
+    color: white;
+    background:darkolivegreen;
+    border: 2px solid burlywood transparent;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;  
+    border-style:none ; 
+}
+.nav-container button:hover {
+    color: red;
+    background:white;
+    font-weight: 900;
+}
+
+.hero {
+    padding: 3rem 0px;
+
+}
+.space {
+    flex: 1;
+}
+.left-image img{
+  height: 180px;
+  width: 110px;
+  border-style: double;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.right-content {
+    float: right;
+    color: whitesmoke;
+}
+.right-content h3 span {
+    color:red;
+}
+.right-content h1 {
+    color:lavender;
+}
+.right-content button {
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 0px;
+    margin-left: 15px;
+    background:darkolivegreen;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .3s ease;
+    border-radius: 2px;
+    letter-spacing: 1.5px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;  
+    border-style:none ; 
+}
+
+.right-content button:hover {
+    color: red;
+    background: white;
+}
+
+.about {
+    background:hsl(34, 66%, 84%);
+    height: 370px;
+    padding: 20px;
+}
+.left-content {
+    float: left;
+}
+.left-content h1 {
+    color:cadetblue;
+    text-align: center;
+}
+.left-content span {
+      color: crimson;
+}
+.left-content p {
+    color: rgb(66, 63, 63);
+    line-height: 20px;
+}
+.my-image img {
+    height: 220px;
+  width: 120px;
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-top: 40px;
+}
+
+/* .square {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 100% 100%, 50% 80%);
+} */
+.service {
+    height: 300px;
+    background:black;
+}
+
+.service h1,p {
+    text-align: center;
+    color: white;
+ 
+}
+.service h1 span {
+      color: red;
+}
+.service h1 {
+    padding-top: 15px;
+}
+
+.image-service {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.service .first-box {
+    height: 190px;
+    width: 170px;
+    background: white ;
+    margin-left: 10px;
+    transition: all .3s ease;
+
+}
+.service .first-box img {
+    height: 50px;
+    height: 70px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.service .first-box h2 {
+    padding-left: 5px;
+    color: rgb(7, 92, 63);
+}
+.service .first-box p{
+    font-size: 10.5px;
+    padding-left: 2px;
+    color: black;
+}
+.service .first-box:hover {
+    background: bisque;
+}
+
+.service .second-box {
+    height: 190px;
+    width: 170px;
+    background: white ;
+    transition: all .3s ease;
+}
+.service .second-box h2 {
+    padding-left: 5px;
+    color: rgb(7, 92, 63);
+}
+.service .second-box img {
+    height: 70px;
+    height: 80px;
+}
+.service .second-box p {
+    font-size: 11px;
+    color: black;
+
+}
+.service .second-box:hover {
+    background: bisque;
+}
+
+.footer-part {
+    height: 140px;
+    background: hsl(34, 66%, 84%);
+    padding: 10px;
+}
+.footer-part h1 {
+    color: rgb(7, 92, 63);
+    text-align: center;
+}
+.footer-part h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media (min-width: 768px){
+    header {
+        height: 550px;
+    }
+    
+    header {
+        padding: 2rem;
+        margin: 0 auto;
+        justify-content: space-around;
+        /* height: 500px; */
+    }
+    
+    .first-image {
+        height: 100px;
+        margin-right: 3rem;
+        margin-left: 6px;
+    }
+    .first-image p {
+        font-size: 1.5rem;
+        margin-right: 2.8rem;
+
+    }
+    .nav-container a{ 
+        margin-right: 12px;
+        padding-top: 5rem;
+        font-size: 1.5rem;
+    }
+    
+    .nav-container button {
+        width: 93px;
+        padding: 1.3rem 9px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .nav-container button:hover {
+        
+        font-weight: 600;
+    }
+    
+    .hero {
+        padding: 4rem 0px;
+        line-height: 50px;
+    
+    }
+    .space {
+        flex:1;
+    }
+    .left-image img{
+      height: 300px;
+      width: 220px;
+      margin-right: 10px;
+    }
+    
+    .right-content {
+        float: right;
+    }
+    .right-content h3 span {
+        font-size:35px ;
+    }
+    .right-content h3,h2{
+        font-size:33px;
+    }
+    .right-content h1 {
+        font-size: 40px;
+    }
+    .right-content button {
+        margin-top: 30px;
+        width: 230px;
+        padding: 20px 0px;
+        margin-left: 15px;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    .about {
+        height: 400px;
+        padding: 20px;
+    }
+    .left-content {
+        float: left;
+    }
+    .left-content h1 {
+        font-size: 3rem;
+    }
+    .left-content p {
+        line-height: 35px;
+        font-size: 1.7rem;
+    }
+    .my-image img {
+        height: 320px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .service {
+        height: 450px;
+    }
+    
+    .service h1,p {
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+     
+    }
+    .service h1 {
+        padding-top: 15px;
+        font-size: 2.5rem;
+    }
+    
+    .image-service {
+        margin-top: 25px;
+    }
+    .service .first-box {
+        height: 300px;
+        width: 300px;
+        margin-left: 80px;
+        grid-column-gap: 50px;
+    
+    }
+    .service .first-box img {
+        height: 95px;
+        height: 95px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .service .first-box h2 {
+        padding-left: 5px;
+        font-size: 1.8rem;
+    }
+    .service .first-box p{
+
+        padding-left: 5px;
+        font-size: 1.45rem;
+        text-align: start;
+    }
+    .service .second-box {
+        height: 300px;
+        width: 300px;
+        margin-left: 20px;
+    }
+    .service .second-box h2 {
+        padding-left: 5px;
+       font-size: 2.3rem;
+    }
+    .service .second-box img {
+        height: 160px;
+        height: 140px;
+    }
+    .service .second-box p {
+        font-size: 1.4rem;
+        text-align:start;
+        padding: 5px;
+    }
+    .footer-part {
+        height: 200px;
+        padding: 15px;
+    }
+    .footer-part h1 {
+        font-size: 2.5rem;
+    }
+    .footer-part h3 {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        height: 700px;
+    }
+    
+    header {
+        padding: 2.5rem;
+        margin: 0 auto;
+        justify-content: space-around;
+        /* height: 500px; */
+    }
+    
+    .first-image {
+        height: 150px;
+        margin-right: 3rem;
+        margin-left: 6px;
+    }
+    .first-image p {
+        font-size: 2.3rem;
+        margin-right: 3rem;
+
+    }
+    .nav-container a{ 
+        margin-right: 12px;
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+    
+    .nav-container button {
+        width: 130px;
+        padding: 1.8rem 16px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .hero {
+        padding: 4rem 0px;
+        line-height: 50px;
+    
+    }
+    .left-image img{
+      height: 400px;
+      width: 280px;
+    }
+    
+    .right-content {
+        float: right;
+        /* margin-right: 110px; */
+        line-height: 60px;
+    }
+    .right-content h3 span {
+        font-size:40px ;
+    }
+    .right-content h3,h2{
+        font-size:37px;
+    }
+    .right-content h1 {
+        font-size: 45px;
+    }
+    .right-content button {
+        margin-top: 40px;
+        width: 280px;
+        padding: 30px 0px;
+        font-size: 1.8rem;
+        letter-spacing: 1.7px;
+    }
+    .about {
+        height: 450px;
+        padding: 20px;
+    }
+    .left-content {
+        float: left;
+    }
+    .left-content h1 {
+        font-size: 3.5rem;
+    }
+    .left-content p {
+        line-height: 35px;
+        font-size: 1.9rem;
+    }
+    .my-image img {
+        height: 370px;
+        width: 220px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .service {
+        height: 550px;
+    }
+    
+    .service h1,p {
+        font-size: 2.2rem;
+        text-align: center;
+        color: white;
+     
+    }
+    .service h1 {
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+    
+    .image-service {
+        margin-top: 25px;
+    }
+    .service .first-box {
+        height: 350px;
+        width: 350px;
+        margin-left: 130px
+    
+    }
+    .service .first-box img {
+        height: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .service .first-box h2 {
+        font-size: 2.7rem;
+    }
+    .service .first-box p{
+        font-size: 1.5rem;
+    }
+    .service .second-box {
+        height: 350px;
+        width: 350px;
+        margin-right: 130px;
+    }
+    .service .second-box h2 {
+       font-size: 2.4rem;
+    }
+    .service .second-box img {
+        height: 200px;
+        width: 250px;
+    }
+    .service .second-box p {
+        font-size: 1.4rem;
+    }
+    .footer-part {
+        height: 250px;
+        padding: 15px;
+    }
+    .footer-part h1 {
+        font-size: 3rem;
+    }
+    .footer-part h3 {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
